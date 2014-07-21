@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.usmcommunitykit.MainActivity$PlaceholderFragment" >
+  
+	  <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:weightSum="1" >
+		    <ImageView
+			    android:id="@+id/map"
+			    android:contentDescription="@string/content"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:adjustViewBounds="true"
+			    android:src="@drawable/map" />
+	</LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal"
+	  android:weightSum="2" >
+
+        <ImageView
+            android:id="@+id/elearning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content"
+            android:src="@drawable/e_learning"
+            android:onClick="openBrowser" />
+	  
+	   <ImageView
+		    android:id="@+id/campusOnline"
+		    android:contentDescription="@string/content"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:adjustViewBounds="true"
+		    android:src="@drawable/campus_online"
+		    android:onClick="openBrowser" />
+  	</LinearLayout>
+   
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:weightSum="2" >
+	     <ImageView
+		    android:id="@+id/mail"
+		    android:contentDescription="@string/content"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:adjustViewBounds="true"
+		    android:src="@drawable/mail"
+		    android:onClick="openBrowser" />
+	
+	      <ImageView
+		    android:id="@+id/aboutUs"
+		    android:contentDescription="@string/content"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:adjustViewBounds="true"
+		    android:src="@drawable/about_us"
+		    android:onClick="displayAboutUs" />
+	</LinearLayout>	
+</LinearLayout>
