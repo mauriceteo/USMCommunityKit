@@ -17,7 +17,8 @@
 			    android:layout_height="wrap_content"
 			    android:layout_weight="1"
 			    android:adjustViewBounds="true"
-			    android:src="@drawable/map" />
+			    android:src="@drawable/map" 
+			    android:onClick="openMap" />
 	</LinearLayout>
 
     <LinearLayout
@@ -34,7 +35,7 @@
             android:adjustViewBounds="true"
             android:contentDescription="@string/content"
             android:src="@drawable/e_learning"
-            android:onClick="openBrowser" />
+            android:onClick="openBrower" />
 	  
 	   <ImageView
 		    android:id="@+id/campusOnline"

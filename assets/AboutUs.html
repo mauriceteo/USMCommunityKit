@@ -1,11 +1,9 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>About</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="jquery.min.js"></script>
-    <script type="text/javascript" src="dist/js/bootstrap.js"></script>
-    <link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
 <br>
@@ -18,7 +16,7 @@
 		<a onClick="shower()" style="text-decoration: none;" class = "list-group-item"><h3>Any questions?</h3></a>
 
 <hr>
-		<a href="about.html" style="text-decoration: none;"  class = "list-group-item"><h3>What do you think about us?</h3></a>
+		<a href="file:///android_asset/FAQ.html" style="text-decoration: none;"  class = "list-group-item"><h3>What do you think about us?</h3></a>
 
 <hr>
 		<a href="about.html" style="text-decoration: none;" class = "list-group-item"><h3>How did we do?</h3></a>
@@ -26,6 +24,8 @@
 <hr>	
 	
 	<a href="about.html" style="text-decoration: none;" class = "list-group-item"><h3>Need to find us?</h3></a>	
+	
+	
 
 
 <br><br>
@@ -34,11 +34,12 @@
 	All Right Reserved</p>
 </footer>
 
-	<script type="text/javascript">
-		function shower(){
-		Android.showAnyQuestions();
-		}
-	</script>
 
+<script type="text/javascript">
+    function shower() {
+        Android.sendFeeback();
+    }
+</script>
+	
 </body>
 </html> 

@@ -11,12 +11,13 @@ import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
 
+	static final String EXTRA_MESSAGE = null;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
-		
+	
 	}
 
 	@Override
@@ -39,13 +40,14 @@ public class MainActivity extends ActionBarActivity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-    /** Called when the user clicks the Send button */
+    /** Called when the user clicks the button widget */
     public void openBrowser(View view) {
     	int id = view.getId();
 		// Do something in response to button
+    	
     	if(id == R.id.elearning){
-	    	Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://elearning.usm.my"));
-	    	startActivity(browserIntent);
+    		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.elearning.usm.my/"));
+        	startActivity(browserIntent);
     	}
     	else if(id == R.id.campusOnline){
         	Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.campusonline.usm.my/"));
@@ -58,7 +60,12 @@ public class MainActivity extends ActionBarActivity {
     }
     
     public void displayAboutUs(View view){
-    	Intent intent = new Intent(this, OpenBrowser.class);
+    	Intent intent = new Intent(this, AboutUs.class);
+    	startActivity(intent);
+    }
+    
+    public void openMap(View view){
+    	Intent intent = new Intent(this, MapActivity.class);
     	startActivity(intent);
     }
 
